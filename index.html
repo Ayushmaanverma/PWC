@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portable Weighing Machine</title>
+    <title>Light Meter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Portable Weighing Machine</h1>
-        <div class="button-group">
-            <button id="start">Start</button>
-            <button id="record">Record</button>
-            <button id="reset">Reset</button>
-            <button id="tare">Tare</button>
+        <h1>📏 Light Meter</h1>
+        <p id="status">Waiting for sensor data...</p>
+
+        <div id="lux-box">
+            <span id="lux-value">--</span>
+            <span class="unit">Lux</span>
         </div>
-        <div id="output">Net Force: 0.00 m/s²</div>
+
+        <div class="scale">
+            <div class="level" id="dark">🌑 Dark</div>
+            <div class="level" id="dim">🕯️ Dim</div>
+            <div class="level" id="normal">💡 Normal</div>
+            <div class="level" id="bright">🌞 Bright</div>
+            <div class="level" id="intense">🔥 Too Bright</div>
+        </div>
+
+        <p id="guide">📖 Hold the phone in different lighting conditions to see live updates.</p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
