@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>📏 Light Meter</h1>
-        <p id="status">Waiting for sensor data...</p>
+        <p id="status">Click "Start" to begin</p>
 
         <div id="lux-box">
             <span id="lux-value">--</span>
@@ -24,8 +24,16 @@
             <div class="level" id="intense">🔥 Too Bright</div>
         </div>
 
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="stop-btn" disabled>Stop</button>
+            <button id="capture-btn" disabled>Take Reading</button>
+        </div>
+
         <p id="guide">📖 Hold the phone in different lighting conditions to see live updates.</p>
     </div>
+
+    <div id="popup" class="popup">📸 Captured Lux: <span id="captured-lux"></span></div>
 
     <script src="script.js"></script>
 </body>
