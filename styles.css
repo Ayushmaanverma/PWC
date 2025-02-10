@@ -90,12 +90,6 @@ button:disabled {
     cursor: not-allowed;
 }
 
-#guide {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-}
-
 .popup {
     position: fixed;
     bottom: 10%;
