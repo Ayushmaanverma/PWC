@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f5;
+    background: #f7f7f7;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -13,36 +13,60 @@ body {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
 }
 
 h1 {
-    color: #333;
+    margin-bottom: 10px;
 }
 
-.button-group {
+#status {
+    font-size: 14px;
+    color: #666;
+}
+
+#lux-box {
     margin: 20px 0;
-}
-
-button {
-    margin: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-#output {
-    margin-top: 20px;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.unit {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #666;
+}
+
+.scale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+}
+
+.level {
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#dark { background: #222; color: white; }
+#dim { background: #444; color: white; }
+#normal { background: #fdd835; }
+#bright { background: #ffa726; }
+#intense { background: #ff5722; color: white; }
+
+#guide {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
 }
